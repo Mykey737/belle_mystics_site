@@ -258,6 +258,23 @@ body{
         margin-bottom: .3rem;
     }
 
+/* CONFIRMATION PAGES */
+#main {
+    background-color: #d1cee7;
+    padding: 1rem 0;
+    color: #2f2b40;
+}
+
+#main h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#main p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
   /* RESPONSIVENESS */
   @media (max-width:1200px){
     #newsletter h1,
@@ -350,6 +367,10 @@ body{
         width: 75%;
         margin: auto;
 
+    }
+
+    #main {
+        padding: 1rem 1.5rem;
     }
 }
   @media (max-width:898px){
