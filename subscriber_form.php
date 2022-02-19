@@ -20,6 +20,8 @@ If you add a form field, you will need to add it here.
 $email_address = $_REQUEST['email_address'] ;
 $first_name = $_REQUEST['first_name'] ;
 $msg = 
+"Here's the the new subscriber's information:" . "\r\n" .
+" " . "\r\n" .
 "First Name: " . $first_name . "\r\n" . 
 "Email: " . $email_address ; 
 
@@ -67,7 +69,7 @@ header( "Location: $error_page" );
 // If we passed all previous tests, send the email then redirect to the thank you page.
 else {
 
-	mail( "$webmaster_email", "Feedback Form Results", $msg );
+	mail( "$webmaster_email", "New Newsletter Subscriber", $msg );
 
 	header( "Location: $thankyou_page" );
 }
